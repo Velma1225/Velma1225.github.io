@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grid.css">
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    --col-gap:15px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding-left:var(--col-gap);
+    padding-right:var(--col-gap);
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+margin-left: calc(var(--col-gap)*-1);
+margin-right:  calc(var(--col-gap)*-1);
+}
+
+[class*="col-"] {
+    box-sizing: border-box;
+    padding:var(--col-gap);
+}
+
+.col-1 {width: 8.333333%;}
+.col-2 {width: 16.666666%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.333333%;}
+.col-5 {width: 41.666666%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.333333%;}
+.col-8 {width: 66.666666%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.333333%;}
+.col-11 {width: 91.666666%;}
+.col-12 {width: 100%;}
+
+.card{
+            border: 1px solid #888;
+            border-radius: 4px;
+            /* overflow: hidden; */
+            margin: 15px;
+            display: flex;
+            box-sizing: border-box;
+    
+        }
+        .card .pic{
+            width: 100px;
+        }
+        .card img{
+            width: 100%;
+            vertical-align: top;
+            object-fit: cover;
+            height: 100%;
+        }
+        .text{
+            padding: 10px;
+            width: 0;
+            flex-grow:1;
+            color: #333;
+        }
+
+@media screen and (min-width:768px){
+    .col-md-1 {width: 8.333333%;}
+    .col-md-2 {width: 16.666666%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.333333%;}
+    .col-md-5 {width: 41.666666%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.333333%;}
+    .col-md-8 {width: 66.666666%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.333333%;}
+    .col-md-11 {width: 91.666666%;}
+    .col-md-12 {width: 100%;}
+    .wrap{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;}   
+    .card{
+        display: block;
+    }
+    .card .pic{
+        width: 100%;
+    }
+    .card .text{
+        width: 100%;
+    }
+     }
+
+@media screen and (min-width:1024px){
+    .col-lg-1 {width: 8.333333%;}
+    .col-lg-2 {width: 16.666666%;}
+    .col-lg-3 {width: 25%;}
+    .col-lg-4 {width: 33.333333%;}
+    .col-lg-5 {width: 41.666666%;}
+    .col-lg-6 {width: 50%;}
+    .col-lg-7 {width: 58.333333%;}
+    .col-lg-8 {width: 66.666666%;}
+    .col-lg-9 {width: 75%;}
+    .col-lg-10 {width: 83.333333%;}
+    .col-lg-11 {width: 91.666666%;}
+    .col-lg-12 {width: 100%;}
+}
+
+@media screen and (min-width:1200px){
+    .col-xl-1 {width: 8.333333%;}
+    .col-xl-2 {width: 16.666666%;}
+    .col-xl-3 {width: 25%;}
+    .col-xl-4 {width: 33.333333%;}
+    .col-xl-5 {width: 41.666666%;}
+    .col-xl-6 {width: 50%;}
+    .col-xl-7 {width: 58.333333%;}
+    .col-xl-8 {width: 66.666666%;}
+    .col-xl-9 {width: 75%;}
+    .col-xl-10 {width: 83.333333%;}
+    .col-xl-11 {width: 91.666666%;}
+    .col-xl-12 {width: 100%;}
+    .card-banner{
+        display: flex;
+    }
+    .card-banner .pic{
+        width: 600px;
+    }
+    .card-row{
+        display: block;
+    }
+    .card-colum{
+        display: flex;
+    }
+    .card .pic img{
+        width: 100%;
+    }
+}
+ 
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="wrap col-12 col-md-4 col-lg-3 col-xl-12">
+            <div class="card card-banner">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+            <div class="card card-row">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+            <div class="card card-row">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-4">
+            <div class="card card-row">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-6">
+            <div class="card card-colum">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-6">
+            <div class="card card-colum">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-6">
+            <div class="card card-colum">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-3 col-xl-6">
+            <div class="card card-colum">
+                <div class="pic"><img src="https://picsum.photos/300/200/?random=10"></div>
+                <div class="text">
+                    <h2>title</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sequi quam blanditiis nisi! Quos
+                        ab iusto nesciunt mollitia doloremque iure culpa eos dolore nam, facere alias et debitis quam?
+                        Asperiores.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

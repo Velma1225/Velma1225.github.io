@@ -1,0 +1,15 @@
+{
+    "firstname":"Zoe",
+    "gender":true,
+    "height":158,
+    "email":"zoe@gmail.com",
+    "city":{
+        "通訊地址":"台北",
+        "戶籍地址":"高雄"
+    },
+    "phone":{
+        "市話":"02-29881055",
+        "行動電話":"0933-852-177"
+    },
+    "cars":["Nissan","Audi"]
+}

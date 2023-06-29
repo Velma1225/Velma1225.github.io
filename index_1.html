@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 600px;
+        background-color: #ededed;
+        margin: auto;
+    }
+
+    .title {
+        width: 600px;
+        height: 60px;
+        background-color: #00adad;
+    }
+
+    .title h1 {
+        font-size: 36px;
+        color: #fff;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .content {
+        width: 300px;
+        margin: auto;
+    }
+/* 
+    .btn-group {
+        display: flex;
+    } */
+
+    #guess_input {
+        width: 150px;
+        height: 60px;
+        border: 2px solid #ffe604;
+        font-size: 28px;
+        color: #515151;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #guess_btn {
+        width: 60px;
+        height: 30px;
+        background-color: #3f3f3f;
+        color: #fff;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    #restart_btn {
+        width: 100px;
+        height: 30px;
+        background-color: #3f3f3f;
+        color: #fff;
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    #show_answer_btn {
+        width: 100px;
+        height: 30px;
+        background-color: #3f3f3f;
+        color: #fff;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>猜數字遊戲</h1>
+        </div>
+        <div class="content">
+            <h2>請輸入1~100之間的數字</h2>
+            <input type="text" id="guess_input" placeholder="請猜數字">
+            <div class="hint"></div>
+            <div class="btn-group">
+                <button id="guess_btn">猜!!</button>
+                <button id="restart_btn">重新開始</button>
+                <button id="show_answer_btn">看答案</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //宣告DOM
+        const guessInput = document.getElementById('guess_input');
+        const hintArea = document.querySelector('.hint');
+        const guessBtn = document.getElementById('guess_btn');
+        const restartBtn = document.getElementById('restart_btn');
+        const showAnswerBtn = document.querySelector('#show_answer_btn');
+
+        //宣告變數
+        let minNum, maxNum, answerNum, guessNum;
+
+        //DOM事件掛載
+        showAnswerBtn.addEventListener('click', function () {
+            alert(answerNum);
+        })
+
+        restartBtn.addEventListener('click', function () {
+            init();
+        })
+
+        //掛事件是放事件名稱，不能放小括號()
+        guessBtn.addEventListener('click', guess)
+    
+
+        // window.addEventListener('load',function(){
+        //     console.log('load event');
+        //     init();
+        // })
+
+        // window.addEventListener('DOMContentLoaded',function(){
+        //     // console.log('DOMContentLoad event')
+
+        // })
+
+        window.onload = function () {
+            init();
+        }
+
+        //取值跟頭尾空白去掉處理、0開頭去掉
+        function guess() {
+           
+            const val = guessInput.value.trim();
+            // console.log(val)
+            if (val === '' || isNaN(val) || val[0] === '0') {
+                // console.log('123456') 
+                alert('請輸入正確的數字');
+                guessInput.value = '';
+                return;
+            }
+
+            //猜得數字轉成數字型別
+            guessNum = parseInt(val);
+
+            if(isInValidNumRange())
+                //離開呼叫
+                //if成立   如果只有一行不用大括號
+                return;
+            
+            if (guessNum === answerNum) {
+                alert(`答案是${answerNum}`);
+                init();
+                return;
+            } else if (guessNum < answerNum) {
+                minNum = guessNum;
+            } else if (guessNum > answerNum) {
+                maxNum = guessNum;
+            }
+
+            guessInput.value = '';
+            showHint();
+        }
+
+        function isInValidNumRange() {
+
+            if (guessNum < minNum || guessNum > maxNum) {
+                showHint();
+                guessInput.value = '';
+                alert('請確認輸入範圍');
+                return true;
+            }
+            return false;
+        }
+        //alert會卡住瀏覽器   能不用就不用
+        function showHint() {
+            hintArea.textContent = `請輸入${minNum} - ${maxNum}之間的數字`;
+
+        }
+        /**
+         * 預設值處理
+        */
+
+        function init() {
+            // guessBtn.disabled = false;
+            guessInput.value = '';
+            minNum = 1;
+            maxNum = 100;
+            answerNum = generateAnswer();
+            showHint();
+
+        }
+
+        //產生遊戲開始的數字
+        function generateAnswer() {
+            return getRandomIntInclusive(minNum, maxNum);
+        }
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+        }
+
+    </script>
+</body>
+
+</html>
