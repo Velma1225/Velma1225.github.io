@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>1A2B猜數字遊戲</h1>
+    <button class="start">開始</button>
+    <button class="restart_btn">放棄重來</button><br>
+    <button id="answer_btn">看答案</button>
+    <!-- <input type="text" value="顯示答案" class="input"> -->
+    <br>
+    <input type="text" placeholder="請輸入數字" class="guess_input">
+    <button class="guess_btn">猜</button>
+
+    <script>
+
+        //開始按鈕，產生4個不重複的數字•如果沒有產生亂數之前不得讓人做猜數字的動作•新亂數、清空紀錄
+
+        //宣告DOM
+        const start = document.querySelector(".start");
+        const restartBtn = document.querySelector(".restart_btn");
+        const answerBtn = document.getElementById("answer_btn");
+        const guessBtn = document.querySelector(".guess_btn");
+        const guessInput = document.querySelector(".guess_input");
+
+        //宣告變數
+        let guessNum,answerNum;
+
+        //DOM事件掛載
+        answerBtn.addEventListener("click",()=>{
+            alert(`答案是${answerNum}`);
+        })
+
+
+
+
+        restartBtn.addEventListener("click",()=>{
+            init();
+            alert("放棄重來")
+        })
+
+        guessBtn.addEventListener("click",(guess))
+
+        // let answerArray = [];
+        // answerArray.push(answerNum);
+        window.onload = function () {
+          init();
+          
+        }
+
+        function guess(){
+            const val = guessInput.value.trim();
+            console.log(val)
+        }
+
+        function init(){
+            answerNum = getAnswer();
+            
+        }
+      
+
+        //產生遊戲開始數字
+        function getAnswer() {
+            return getRandomIntInclusive(1,9999);
+        }
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min); //The maximum is inclusive and the minimum is inclusive
+        }
+
+       
+
+    </script>
+</body>
+
+</html>

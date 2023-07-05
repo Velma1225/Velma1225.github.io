@@ -125,7 +125,10 @@ p {
     color:#F65936;
     
 }
-.all img::after{
+.all .circle{
+    position: relative;
+}
+.all .circle::after{
     content: "";
     position: absolute;  
     right: 0;
