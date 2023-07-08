@@ -175,7 +175,7 @@
         .line {
             border-bottom: 3px solid #AE0000;
             margin-bottom: 16px;
-            
+
 
         }
 
@@ -191,7 +191,6 @@
 
         .aboutUs-text {
             width: 636px;
-            margin-bottom: 80px;
             float: right;
         }
 
@@ -203,19 +202,26 @@
 
         }
 
+        .content {
+            padding: 80px 0 160px;
+        }
+
         .section {
             width: 636px;
             clear: left;
-            margin-bottom: 40px;
+            padding-bottom: 40px;
 
         }
-
+   
+    
         .section h3 {
             font-size: 40px;
             line-height: 60px;
             color: #AE0000;
         }
-
+        .section-text{
+        margin-bottom: 16px;
+      }
         .section span {
             font-size: 20px;
             line-height: 30px;
@@ -226,11 +232,15 @@
             font-size: 24px;
             line-height: 36px;
         }
+        .mt{
+            padding-bottom: 12px;
+        }
 
         .footer {
             background-color: #000;
         }
-        .footer .container .pic{
+
+        .footer .container .pic {
             text-align: center;
         }
 
@@ -245,7 +255,7 @@
 
 <body>
     <div class="container">
-        <div class=" title">
+        <div class="title">
             <h1>VITO</h1>
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2023week1/vito.png"
                 alt="Vito image">
@@ -264,58 +274,61 @@
     </div>
 
     <div class="container">
-        <div class="section">
-            <h3>Vito Evans</h3>
-            <div class="line"></div>
-            <ul>
-                <li>456 Walnut Avenue, Someville, USA</li>
-                <li>+1 123 456 7890</li>
-                <li>info@hexschool.com</li>
-                <li>www.infohexschool.com</li>
-            </ul>
-        </div>
-    </div>
-    <div class="container">
+        <div class="content">
+            <div class="section">
+                <h3>Vito Evans</h3>
+                <div class="line"></div>
+                <ul>
+                    <li class="mt">456 Walnut Avenue, Someville, USA</li>
+                    <li class="mt">+1 123 456 7890</li>
+                    <li class="mt">info@hexschool.com</li>
+                    <li>www.infohexschool.com</li>
+                </ul>
+            </div>
 
-        <div class="section">
-            <h3>Education</h3>
-            <div class="line"></div>
-            <ul>
-                <span>2014-2018</span>
-                <li>Bachelor of Science in Business Administration, University of California, Los Angeles</li>
-                <span>2012-2014 </span>
-                <li>Associate of Arts in Graphic Design, San Francisco State University</li>
-                <span>2008-2012 </span>
-                <li>High School Diploma, Lincoln High School</li>
+            <div class="section">
+                <h3>Education</h3>
+                <div class="line"></div>
+                <ul class="section-text">
+                    <span>2014-2018</span>
+                    <li>Bachelor of Science in Business Administration, University of California, Los Angeles</li>
+                </ul>
+                <ul class="section-text">
+                    <span>2012-2014 </span>
+                    <li>Associate of Arts in Graphic Design, San Francisco State University</li>
+                    </ul>
+                    <ul class="section-text">
+                    <span>2008-2012 </span>
+                    <li>High School Diploma, Lincoln High School</li>
+                </ul>
+            </div>
 
-            </ul>
-        </div>
-    </div>
+            <div class="section">
+                <h3>Work</h3>
+                <div class="line"></div>
+                <ul class="section-text">
+                    <span>2018-2021</span>
+                    <li>Marketing Manager, ABC Company</li>
+                    </ul>
+                    <ul class="section-text">
+                    <span>2016-2018</span>
+                    <li>Sales Associate, XYZ Corporation</li>
+                    </ul>
+                    <ul class="section-text">
+                    <span>2014-2016</span>
+                    <li>Customer Service Representative, QRS Inc.</li>
+                </ul>
+            </div>
 
-    <div class="container">
-        <div class="section clearfix">
-            <h3>Work</h3>
-            <div class="line"></div>
-            <ul>
-                <span>2018-2021</span>
-                <li>Marketing Manager, ABC Company</li>
-                <span>2016-2018</span>
-                <li>Sales Associate, XYZ Corporation</li>
-                <span>2014-2016</span>
-                <li>Customer Service Representative, QRS Inc.</li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="section">
-            <h3>Awards</h3>
-            <div class="line"></div>
-            <ul>
-                <li>Best in Show Award, National Advertising Awards, 2020</li>
-                <li>Honorable Mention, International Design Competition, 2019</li>
-                <li>People's Choice Award, Local Art Exhibition, 2018</li>
-            </ul>
+            <div class="section">
+                <h3>Awards</h3>
+                <div class="line"></div>
+                <ul>
+                    <li class="mt">Best in Show Award, National Advertising Awards, 2020</li>
+                    <li class="mt">Honorable Mention, International Design Competition, 2019</li>
+                    <li>People's Choice Award, Local Art Exhibition, 2018</li>
+                </ul>
+            </div>
         </div>
     </div>
 
