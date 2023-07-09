@@ -2242,7 +2242,7 @@
                     ulContainer = document.getElementById("ulContainer");
                     let li = document.createElement("li");
                     heroArray.forEach(hero=>{
-                    li.append(hero.id,hero.name,hero.blurb);
+                    li.innerHTML += `<li>${hero.id},${hero.name},${hero.blurb}</li>`;
                     ulContainer.append(li);
                   });
                   
