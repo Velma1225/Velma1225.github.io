@@ -72,7 +72,7 @@
                         <div class="input-group mb-3">
                             <span class="input-group-text">日期</span>
                             <input id="add-addon1" type="text" class="form-control" placeholder="" aria-label=""
-                                aria-describedby="basic-addon1" disabled>
+                                aria-describedby="basic-addon1" disabled data-index="">
                         </div>
 
                         <!-- 標題 -->
@@ -83,7 +83,7 @@
                         </div>
                         <!-- 內容 -->
                         <div class="input-group mb-3">
-                            <span class="input-group-text" >內容</span>
+                            <span class="input-group-text">內容</span>
                             <input id="add-addon3" type="text" class="form-control" placeholder="" aria-label=""
                                 aria-describedby="basic-addon1">
                         </div>
@@ -165,7 +165,7 @@
         let today = new Date()
         let year = today.getFullYear()
         let month = today.getMonth()
-     
+
 
 
 
@@ -191,7 +191,7 @@
 
         //addEvenListiner
         perMonthBtn.addEventListener('click', function () {
-            
+
             // alert(111)
             //月份-1
             //0~11月
@@ -244,18 +244,60 @@
             console.log(key, dataArray);
             setLocalStorage(key, dataArray);
 
-
             myModalAdd.hide();
 
         });
         // //編輯Modal的修改按鈕
-        // editon4Btn.addEventListener("click", function () {
+        editon4Btn.addEventListener("click", function () {
+            //取得修改後的內容
+            let editDate = editon1DOM.value.split('-').join('');
+            let editTitle = editon2DOM.value;
+            let editContent = editon3DOM.value;
+
+
+            //取得修改的index
+            let index = editon1DOM.getAttribute('data-index');
+
+            //取得localstorage的資料
+            let data = getLocalStorage(editDate);
+
+
+            //把行程塞進物件
+            let obj = {
+                title:editTitle,
+                content:editContent
+            }
+
+            //更新資料
+            data[index] =obj;
+
+            setLocalStorage(editDate,data);
+            myModalEdit.hide();
+            renderDate();
+
+        })
 
         // })
         // //編輯Modal的刪除按鈕
-        // editon5Btn.addEventListener("click", function () {
+        editon5Btn.addEventListener("click", function () {
 
-        // })
+            //刪除的日期
+            let editDate = editon1DOM.value.split('-').join('');
+
+            //要刪除的是哪一筆
+            let index = editon1DOM.getAttribute('data-index');
+
+            //取得lo
+            let data = getLocalStorage(editDate);
+
+            //刪除資料
+            data.splice(index,1);
+
+            setLocalStorage(editDate,data);
+
+            myModalEdit.hide();
+            renderDate();
+        })
 
         //Function
 
@@ -303,6 +345,39 @@
                     } else {
                         if (day <= dateOfMonth) {
                             tdDOM.innerText = day;
+
+                            //查詢 日期是否有行程?
+                            let key = `${year}${month + 1}${day}`
+                            let data = getLocalStorage(key)
+
+                            if (data != null) {
+                                let ulDOM = document.createElement("ul");
+                                //印出我的代辦事項
+                                data.forEach((item,index) => {
+                                    let liDOM = document.createElement("li");
+                                    console.log(item);
+                                    liDOM.innerText = item.title;
+
+                                    //事件的綁定
+                                    let editday = day;
+                                    liDOM.addEventListener("click",function(e){
+                                        myModalEdit.show();
+
+                                        let editDate = `${year}-${month+1}-${editday}`;
+
+                                        editon1DOM.value = editDate;
+                                        editon2DOM.value = item.title;
+                                        editon3DOM.value = item.content;
+                                        editon1DOM.setAttribute("data-index",index)
+
+                                        e.stopPropagation();
+                                    });
+
+                                    ulDOM.append(liDOM);
+                                });
+                                tdDOM.append(ulDOM);
+                            }
+
                             tdDOM.addEventListener("click", tdClickFN.bind(null, year, month, day))
                             day++;
 
@@ -325,6 +400,8 @@
         function tdClickFN(year, month, day) {
             addon1DOM.value = `${year}-${month + 1}-${day}`;
 
+
+
             myModalAdd.show();
 
             //取日期寫到Modal的input.value
@@ -343,7 +420,6 @@
         function setLocalStorage(key, value) {
             console.log(JSON.stringify(value));
             localStorage.setItem(key, JSON.stringify(value))   //放字串
-
         }
 
 
