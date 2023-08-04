@@ -1,0 +1,71 @@
+*{
+    font-family: Arial,"新微軟正黑體",Helvetica,Meiryo,Microsoft JhengHei,"微軟正黑體",sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+    letter-spacing: 0.4px;
+
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+}
+img{
+    vertical-align: middle;
+    max-width: 100%;
+}
+.price-section .pic{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.price-section .pic img{
+    width: 300px;
+}
+h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: center;
+}
+h3{
+    font-size: 24px;
+    text-align: center;
+}
+.price-wrap{
+    margin-top: 30px;
+   
+}
+.price-wrap ul{
+display: flex;
+justify-content: center;
+}
+.price-wrap li{
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    width: 170px;
+background-color:#fff;
+color:#555C66;
+box-shadow: 3px 3px 5px #dcdcdc;
+
+}
+.price-wrap .free-price{
+    background-color: #fa3461;
+    color:#fff;
+}
+
+.price-wrap li span{
+    font-size: 24px;
+}
+.limit-free .tag{
+    margin-top: 30px;
+   
+    display: flex;
+    color:#6596FF;
+
+}
+.limit-free .tag p{
+    padding: 0 10px;
+}
