@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myAccount</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <!-- googlefonts-icons -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./header-style.css">
+  <link rel="stylesheet" href="./footer-style.css">
+  <link rel="stylesheet" href="./myAccount-style.css">
+  <link rel="stylesheet" href="./workOpening.css">
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <div class="nav-container">
+          <div class="logo">
+            <a class="haban-logo" href="#">
+              <picture>
+                <source type="image/webp" srcset="./layout-img/logo_666_b_slogan.png" media="(min-width: 992px)">
+                <img class="haban-logo-main" src="./layout-img/logo_666_b_slogan_white.png" alt="666蛤班">
+              </picture>
+              <img class="haban-logo-mascot" src="./layout-img/logo_666_b_ha_head.png" alt="">
+            </a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+
+          <div class="item-group collapse navbar-collapse" id="navbarTogglerDemo03">
+            <div class="content">
+
+              <ul class="item-list navbar-nav ms-auto mb-2 mb-lg-0">
+                <button class="btn-close" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                  aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Close">
+                </button>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">找工作</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="#" target="_blank">
+                    <img class="comp_banner" src="./layout-img/img_tooltip_sale.svg" alt="徵才限時0元">
+                  </a>
+                  <a class="ad-plan nav-link" href="#">徵才方案</a>
+                </li>
+                <li class="is-m">
+                  <img class="comp_img" src="./layout-img/menu_bg_ha_activity@2x.png" alt="年度代言人 蛤們" loading="lazy">
+                </li>
+              </ul>
+
+
+              <div class="member-list">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <span class="icon material-symbols-outlined">
+                        business_center
+                      </span>
+                      求職會員
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span class="material-symbols-outlined">person</span>
+                          求職註冊
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span class="material-symbols-outlined">login</span>
+                          求職登入
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      <span class="icon material-symbols-outlined">
+                        home_work
+                      </span>
+                      企業徵才
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span class="material-symbols-outlined">person</span>
+                          企業註冊
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span class="material-symbols-outlined">login</span>
+                          企業登入
+                        </a>
+                      </li>
+                      <hr>
+                      <li>
+
+                        <a class="dropdown-item" href="#">
+                          <span class="material-symbols-outlined">storefront</span>
+                          企業方案
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+
+
+
+      </div>
+    </nav>
+  </header>
+
+  <div class="member-homepage container safe mt-4">
+    <div class="hi row mt-3 ps-2">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./myAccount.html" class="text-decoration-none">企業帳戶首頁</a></li>
+                <li class="breadcrumb-item" aria-current="page">企業帳戶</li>
+                <li class="breadcrumb-item" aria-current="page">職缺刊登管理</li>
+                <li class="breadcrumb-item" aria-current="page">新增職缺</li>
+            </ol>
+        </nav>
+        <!-- <p>Hi,<span>新朋友</span></p> -->
+    </div>
+    <div class="row">
+        <div class="side-bar- d-none d-lg-block col-lg-3 px-3">
+            <ul class="list-group text-center">
+                <li class="list-group-item fw-bold for-sp" style="color: #005290;background-color: #F4F5F5;">徵才廣告管理
+                </li>
+                <li class="list-group-item"><a href="../../Gina/ResumeEdit/ResumeEdit.html">
+                       
+                    <span style="vertical-align: bottom;margin-left: 1px;margin-right: 1px;">徵才刊登開通</span>
+                       
+                </li>
+                <li class="list-group-item"><a href="#">
+                        
+                    <span style="vertical-align: bottom;margin-left: 2px;">加值廣告</span>
+                    </a></li>
+                <li class="list-group-item fw-bold" style="color: #005290;background-color: #F4F5F5;">通知中心</li>
+                <li class="list-group-item"><a href="../../Ponpon/chat/chat.html">聊聊通知</a><span class="count"> (0)</span></li>
+                <li class="list-group-item fw-bold" style="color: #005290;background-color: #F4F5F5;">職缺刊登管理</li>
+                <li class="list-group-item"><a href="../../Zoe/myAccount-opening.html">刊登新職缺</a></li>
+
+                <li class="list-group-item"><a href="../application_record/application_record.html">編輯職缺清單</a><span class="count"> </span></li>
+                <li class="list-group-item"><a href="../collection_company/collection_company.html">求職者應徵紀錄</a><span class="count"></span></li>
+                <li class="list-group-item"><a href="../collection_company/collection_company.html">收藏履歷</a><span class="count"></span></li>
+
+                <li class="list-group-item fw-bold" style="color: #005290;background-color: #F4F5F5;">企業資料管理中心</li>
+                <li class="list-group-item"><a href="../application_record/application_record.html">公司介紹編輯</a><span class="count"> </span></li>
+                <li class="list-group-item border-bottom"><a href="../account_profile_editing/account_profile_editing.html">帳號資料編輯</a></li>
+
+            </ul>
+            <ul class="customer-service-info list-group text-center mt-2 mb-2">
+                <li class="list-group-item fw-bold" style="color: #005290;background-color: #F4F5F5;">客服資訊</li>
+                <li class="list-group-item border-bottom text-start">
+                    <p>服務時間：<span>08:30-18:00</span></p>
+                    <p><span>週一至週六</span></p>
+                    <p>客服電話：<span>00-0000-0000</span></p>
+                    <p>客服傳真：<span>00-0000-0000</span></p>
+                    <p>我有問題？<a class="text-primary" href="#"><span>前往協助</span></a></p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-12 col-lg-9 px-0">
+
+            <div id="content">
+                <div style="margin-left: 1px;" class="row justify-content-between">
+
+                    <h2 class="col-6">帳號資料編輯</h2>
+                    <span class="col-6 text-end"><em>＊</em>為必填項目</span>
+                </div>
+                
+              
+
+      <!-- <div id="content" class="col-12 col-md-9 px-0 opening-new"> -->
+        <!-- ---- -->
+      
+
+        <div class="col-lg-12">
+          <div class="tabbable">
+            <ol class="nav tab-group stepsBox"><!--nav-tabs nav-justified-->
+              <li class="active is-doing col-12 col-lg-2 text-danger"><a href="#about" data-toggle="tab">1.填寫工作內容</a></li>
+              <li class="col-12 col-lg-2"><a href="#social" data-toggle="tab">2.填寫職缺條件</a></li>
+              <li class="col-12 col-lg-2"><a href="#location" data-toggle="tab">3.填寫應徵與面試</a></li>
+            </ol>
+            <div class="tab-content">
+              <!-- 刊登新職缺工作內容 -->
+              <div class="tab-pane active" id="about">
+                <div class="card card-no-radius mb-3">
+                  <div class="card-header card-title-p">
+                    <div class="fw-bold d-flex justify-content-between align-items-center">
+                      <span>工作內容</span>
+                    </div>
+                  </div>
+
+
+                  <div class="container mt-3">
+
+                    <table class="table table-striped table-rwd ">
+
+                      <tbody>
+                        <tr>
+                          <td><span class="mark-text-red">*</span>職務名稱：</td>
+                          <td>
+                            <div class="pb-1 opening-list">
+                              <input type="text" class="mb-1">
+
+                              <span>
+                                <i class="fa-solid fa-magnifying-glass p-1" style="color: #0d6efd"></i>
+                                <a href="#" class="mark-text-blue">找不到適合職務?</a><br />
+                              </span>
+                            </div>
+                            <p class="mark-text-red">依就業服務法規定，雇主不得於予就業歧視，例:女服務人員、倉管人員(限男性)。 <span><a href="#"
+                                  class="mark-text-blue">就業服務法</a></span></p>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td><span class="text-danger p-1">*</span>職位性質：</td>
+                          <td>
+                            <div class="d-flex col-12 col-lg-6">
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  全職
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  兼職
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  工讀
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+
+                        <tr class="opening-category">
+                          <td><span class="text-danger p-1">*</span>職務類別：</td>
+                          <td>
+                            <div class="opening-typb-1 opening-list">
+                              <input type="text">
+                              <span>
+                                <i class="fa-solid fa-magnifying-glass p-1" style="color: #0d6efd;"></i>
+                                <a href="#" class="p-1">找不到適合職務?</a><br />
+                              </span>
+                            </div>
+                            <p class="mark-text-red">(職務類別順序會影響貴公司配對資料，請依造優先順序排列)</p>
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td><span class="text-danger p-1">*</span>工作內容：</td>
+                          <td>
+                            <div class="mb-3">
+                              <label for="exampleFormControlTextarea1" class="form-label"><a href="#">[使用範本]</a></label>
+                              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            </div>
+                          </td>
+
+                        </tr>
+
+                        <tr class="opening-category">
+                          <td><span class="mark-text-red p-1">*</span>身分類別：</td>
+                          <td>
+                            <div class="d-flex flex-wrap">
+
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  一般求職者
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  應屆畢業生
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  日間就讀中
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  夜間就讀中
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  中高年齡者
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  二度就業
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  原住民
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  研發替代役
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  身障人士
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  不拘
+                                </label>
+                              </div>
+
+
+                            </div>
+                          </td>
+
+                        </tr>
+
+
+                        <tr class="opening-category">
+
+                          <td><span class="mark-text-red p-1">*</span>薪資待遇：</td>
+                          <td>
+                            <div class="form-check col-6  d-inline-flex">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label float-start ps-1" for="flexCheckDefault">
+                                月薪
+                                <input type="text">
+                              </label>
+                            </div>
+                            <div class="form-check col-6  d-inline-flex">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label float-start ps-1" for="flexCheckDefault">
+                                時薪
+                                <input type="text">
+                              </label>
+                            </div>
+                            <div class="form-check col-6  d-inline-flex">
+                              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                              <label class="form-check-label float-start ps-1" for="flexCheckDefault">
+                                面議
+                              </label>
+                            </div>
+
+
+
+
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td><span class="mark-text-red p-1">*</span>上班地點：</td>
+                          <td>
+                            <div class="input-group input-group-sm mb-3">
+                              
+                              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="mark-text-red p-1">*</span>上班時段：</td>
+                          <td>
+                            <div class="form-row">
+                              <div class="form-unit">
+
+                                <div class="sentence-row">
+                                  <div class="sentence-text-wrapper">
+                                    <span class="input-inline-wrapper">
+                                      <input class="selectable input-text input-inline" type="text"
+                                        data-drop-type="third" val="Approved">
+                                    </span>
+                                    點 ~
+                                    <span class="input-inline-wrapper input-minimal">
+                                      <input class="input-text input-with-spinner input-inline input-day" type="text"
+                                        min="0" val="0">
+                                    </span>
+                                    點
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </td>
+
+                        </tr>
+
+                        <tr>
+                          <td><span class="mark-text-red p-1">*</span>職務類別：</td>
+                          <td>
+                            <select class="form-select form-select-sm" aria-label="Small select example">
+                              <option value="1">廚師/服務員/麵包師</option>
+                              <option value="2">飯店工作人員/領隊/導遊/空服/地勤人員</option>
+                              <option value="3">美容/美髮師/醫美諮詢師/美甲師</option>
+                              <option value="4">軟體工程師/資料工程師/Android/iOS工程師</option>
+                              <option value="5">系統工程師/網路管理工程師/資安工程師</option>
+                              <option value="6">電話客服/文字客服</option>
+                              <option value="7">門市/店員/專櫃人員/售票/收銀人員</option>
+                            </select>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="back-next d-flex text-center">
+
+                              <button type="button" class="next col-4 btn m-1">直接儲存</button>
+                              <button type="button" class="col-4 btn m-1">預覽</button>
+                              <button type="button" class="col-4 btn m-1">取消</button>
+
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="social">
+                <!-- 刊登新職缺職缺條件 -->
+                <div class="card card-no-radius mb-3">
+                  <div class="card-header card-title-p">
+                    <div class="fw-bold d-flex justify-content-between align-items-center">
+                      <span>職缺條件</span>
+                    </div>
+                  </div>
+
+
+                  <div class="container mt-3">
+
+                    <table class="table table-striped table-rwd ">
+
+                      <tbody>
+                        <tr>
+                          <td><span class="text-danger p-1 col-lg-2">*</span>職位性質：</td>
+                          <td>
+                            <div class="d-flex col-lg-6">
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  全職
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  兼職
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  工讀
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="text-danger p-1">*</span>上班班別：</td>
+                          <td>
+                            <div class="d-flex col-12 col-lg-6">
+                              <div class="col-4 col-lg-3 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  日班
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-3 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  晚班
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-3 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  大夜班
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-3 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  假日
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+                        </tr>
+
+                        <tr>
+                          <td><span class="text-danger p-1">*</span>管理責任：</td>
+                          <td class="col-lg-10">
+                            <div class="d-flex col-12 col-lg-6">
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  有
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  無
+                                </label>
+                              </div>
+
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><span class="mark-text-red p-1">*</span>可上班日：</td>
+                          <td>
+                            <div class="d-flex flex-wrap col-lg-8">
+                              <div class="col-12 col-lg-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  不拘
+                                </label>
+                              </div>
+
+                              <div class="col-12 col-lg-6 p-1">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  <input class="form-check-input col-12 col-lg-2" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                  <input type="text" class="col-12 col-lg-10" placeholder="請填寫可上班日">
+
+                                </label>
+                              </div>
+
+                            </div>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td><span class="mark-text-red p-1">*</span>需求人數：</td>
+                          <td>
+                            <div class="d-flex flex-wrap col-lg-8">
+                              <div class="col-12 col-lg-3">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  不拘
+                                </label>
+                              </div>
+
+                              <div class="col-12 col-lg-3 p-1">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
+                                  <input type="text" class="col-3 col-lg-6">
+
+                                  人
+                                </label>
+                              </div>
+
+
+                            </div>
+                          </td>
+
+                        </tr>
+                        <tr class="opening-category">
+                          <td><span class="mark-text-red p-1">*</span>工作經驗：</td>
+                          <td>
+                            <div class="d-flex flex-wrap col-lg-8">
+
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  無經驗可
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  1年以上
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  3年以上
+                                </label>
+                              </div>
+
+                            </div>
+                          </td>
+
+                        </tr>
+                        <tr class="opening-category">
+                          <td><span class="mark-text-red p-1">*</span>學歷要求：</td>
+                          <td>
+                            <div class="d-flex flex-wrap col-lg-8">
+
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  不拘
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  高中
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  大學
+                                </label>
+                              </div>
+
+                            </div>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td><span class="text-danger p-1">*</span>語言條件：</td>
+                          <td>
+                            <div class="d-flex col-lg-6">
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  英文
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  台語
+                                </label>
+                              </div>
+                              <div class="col-4 col-lg-4 job-type">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                  日語
+                                </label>
+                              </div>
+
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="opening-category">
+                          <td><span class="mark-text-red p-1">*</span>擅長工具 ：</td>
+                          <td>
+                            <div class="d-flex flex-wrap col-lg-12">
+
+                              <div class="form-check col-6 col-lg-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  HTML
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  CSS
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  JavaScript
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  C#
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  SQL
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+
+                        </tr>
+                        <tr class="opening-category">
+                          <td><span class="mark-text-red p-1">*</span>專長技能：</td>
+                          <td>
+                            <div class="d-flex flex-wrap col-lg-8">
+
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  汽車
+                                </label>
+                              </div>
+                              <div class="form-check col-6 col-lg-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label float-start" for="flexCheckDefault">
+                                  機車
+                                </label>
+                              </div>
+                            </div>
+                          </td>
+
+                        </tr>
+                        <tr>
+                          <td><span class="text-danger p-1">*</span>職缺特色：</td>
+                          <td>
+                            <div class="d-flex col-lg-12">
+                              <div class="d-flex job-type">
+                                <div class="col-4 col-lg-3">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    服務業最愛
+                                  </label>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    交通津貼
+                                  </label>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    伙食津貼
+                                  </label>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    週休二日
+                                  </label>
+                                </div>
+                                <div class="col-4 col-lg-3">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    無需輪班
+                                  </label>
+                                </div>
+
+                              </div>
+                            </div>
+                    
+                            <div class="d-flex col-lg-12">
+                              <div class="d-flex job-type">
+                                <div class="col-4 col-lg-5">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    其他特色
+                                  </label>
+                                </div>
+                                <div class="col-4 col-lg-6">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    國外駐點工作  
+                                  </label>
+                                </div>
+                                <div class="col-4 col-lg-6">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    彈性上下班
+                                  </label>
+                                </div>
+                           
+                              
+
+                              </div>
+                            </div>
+
+
+                  </div>
+                  </td>
+                  </tr>
+
+                  <tr>
+                    <td>
+                      <div class="back-next d-flex text-center">
+
+                        <button type="button" class="next col-4 btn m-1 btn-sm">直接儲存</button>
+                        <button type="button" class="col-4 btn m-1 btn-sm">預覽</button>
+                        <button type="button" class="col-4 btn m-1 btn-sm">取消</button>
+
+                      </div>
+                    </td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+ <!-- 刊登應徵與面試 -->
+            <div class="tab-pane" id="location">
+              <div class="card card-no-radius mb-3">
+                <div class="card-header card-title-p">
+                  <div class="fw-bold d-flex justify-content-between align-items-center">
+                    <span>應徵與面試</span>
+                  </div>
+                </div>
+                <div class="container mt-3">
+
+                  <table class="table table-striped table-rwd">
+
+                    <tbody>
+                      <tr class="opening-category">
+                        <td class="col-12 col-lg-2"><span class="mark-text-red p-1">*</span>職務聯絡人：</td>
+                        <td class="col-12 col-lg-10">
+                          <div class="input-group input-group-sm mb-3">
+                            
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                          </div>
+                        </td>
+
+                      </tr>
+                 
+                      <tr>
+                        <td><span class="mark-text-red p-1">*</span>聯絡 Email：</td>
+                        <td>
+                          <div class="d-flex flex-wrap">
+
+                            <div class="form-check col-6 col-lg-5">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                               請先登入後查看
+                              </label>
+                            </div>
+
+                            <div class="form-check col-6 col-lg-5">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              請輸入Email
+                              </label>
+                              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                            </div>
+                       
+                     
+                          </div>
+                        </td>
+
+                      </tr>
+
+                      <tr>
+                        <td><span class="mark-text-red p-1">*</span>備註：</td>
+                        <td>
+                          <div class="d-flex flex-wrap">
+
+                            <div class="form-check col-6 col-lg-5">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault"
+                              id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                請直接投遞履歷，經篩選後會詢問可面試時間。
+                              </label>
+                            </div>
+                        
+                        
+                          <div>
+                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" checked>
+                                <label class="form-check-label ps-2 px-2" for="flexRadioDefault2">
+                             請輸入備註文字
+                            </label>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+                          </div>
+                        </div>
+                        </td>
+
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="back-next d-flex text-center">
+
+                            <button type="button" class="next col-4 btn m-1 btn-sm">直接儲存</button>
+                            <button type="button" class="col-4 btn m-1 btn-sm">預覽</button>
+                            <button type="button" class="col-4 btn m-1  btn-sm">取消</button>
+
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 刊登新職缺工作內容end -->
+        </div>
+    
+      </div>
+      <!-- 刊登新職缺工作內容end -->
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <!-- 右側內容 -->
+
+
+  </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer>
+    <div class="container">
+      <div class="row footer-top-content  footer-content">
+        <div class=" footer-box logo-box col-6">
+
+          <img class="qrcode-img" src="./layout-img/ic_q_rcode.jpg" alt="qr-code">
+          <div class="app-inbox">
+            <h5 class="title">666蛤班<br>官方LINE</h5>
+
+          </div>
+        </div>
+        <div class="href-wrap footer-box col-6">
+          <div class="href-box">
+            <h6 class="title">關於我們</h6>
+            <a href="#">蛤班簡介</a>
+            <a href="#">徵才方案</a>
+            <a href="#">加入我們</a>
+            <a href="#">網站地圖</a>
+          </div>
+          <div class="href-box">
+            <h6 class="title">服務專區</h6>
+            <a href="#" target="_blank">地區找工作</a>
+            <a href="#" target="_blank">產業找工作</a>
+            <a href="#" target="_blank">職務找工作</a>
+            <a href="#" target="_blank">幫助中心</a>
+          </div>
+          <div class="href-box">
+            <h6 class="title">會員條款</h6>
+            <a href="#">刊登契約</a>
+            <a href="#">免責聲明</a>
+            <a href="#">服務條款</a>
+            <a href="#">隱私權聲明</a>
+          </div>
+          <div class="href-box">
+            <h6 class="title">合作專區</h6>
+            <a href="#">廣告合作</a>
+            <a href="#">申訴專線</a>
+            <a href="#">網站公告</a>
+            <a href="#">投資者專區 </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom-content">
+        <div class="footer-bottom-top-wrap">
+          <div class="row footer-content">
+            <div class="footer-box col-lg-8   col-6">
+              <a href="#"><img class="logo-img" src="./layout-img/logo_666_b_white.png" alt="蛤班 logo"></a>
+              <p class="slogan">下班店長請指示</p>
+            </div>
+            <div class="footer-box justify-content-end col-lg-4 col-6">
+              <a href="#" target="_blank">
+                <img class="media-img" src="./layout-img/ic_ig.svg" alt="蛤班 IG">
+              </a>
+              <a href="#" target="_blank">
+                <img class="media-img" src="./layout-img/ic_fb.svg" alt="蛤班 FB">
+              </a>
+              <a href="#" target="_blank">
+                <img class="media-img" src="./layout-img/ic_youtube.svg" alt="蛤班 Youtube">
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-end-wrap">
+          <div class="copyright">
+            <p>© 2023 by HaBan Technology Co., Ltd. All Rights Reserved.</p>
+          </div>
+          <div class="text-content">
+            <p class="is-pc me-4">
+              客服專線：00-0000-0000
+            </p>
+            <p>機構地址 台北市大安區忠孝東路三段xx號xx號樓之x</p>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.nav-link').mouseover(function () {
+        $(this).trigger('click');
+      });
+    });
+  </script>
+</body>
+
+</html>

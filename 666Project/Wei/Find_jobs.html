@@ -1,0 +1,2033 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>找工作</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles_find_jobs.css">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light for-pc">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="nav-container">
+                    <div class="logo">
+                        <a class="haban-logo" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="./img/logo_666_b_slogan.png"
+                                    media="(min-width: 992px)">
+                                <img class="haban-logo-main" src="./img/logo_666_b_slogan_white.png" alt="666蛤班">
+                            </picture>
+                            <img class="haban-logo-mascot" src="./img/logo_666_b_ha_head.png" alt="">
+                        </a>
+                    </div>
+
+                    <button type="button" class="login-for-sp" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span>
+                    </button>
+
+                    <div class="item-group collapse navbar-collapse" id="navbarTogglerDemo03">
+
+                        <ul class="item-list navbar-nav ms-auto mb-2 mb-lg-0">
+                            <button class="btn-close" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                                aria-expanded="true" aria-label="Close">
+                            </button>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">找工作</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">媒合見證</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" target="_blank">
+                                    <img class="comp_banner" src="./img/img_tooltip_sale.svg" alt="徵才限時0元">
+                                </a>
+                                <a class="ad-plan nav-link" href="#">徵才方案</a>
+                            </li>
+                            <li class="is-m">
+                                <a href="#" class="comp_href">
+                                    <img src="./img/img_menu_sale.png" alt="徵才限時 1 元，前往了解 >">
+                                </a>
+                                <img class="comp_img" src="./img/menu_bg_ha_activity@2x.png" alt="年度代言人 浩子"
+                                    loading="lazy">
+                            </li>
+                        </ul>
+
+                        <div class="member-list">
+                            <ul class="navbar-nav me-auto mb-2 ms-4 mb-lg-0">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="icon material-symbols-outlined">
+                                            business_center
+                                        </span>
+                                        求職會員
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">person</span>
+                                                求職註冊
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">login</span>
+                                                求職登入
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="icon material-symbols-outlined">
+                                            home_work
+                                        </span>
+                                        企業徵才
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">person</span>
+                                                企業註冊
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">login</span>
+                                                企業登入
+                                            </a>
+                                        </li>
+                                        <hr>
+                                        <li>
+
+                                            <a class="dropdown-item" href="#">
+                                                <span class="material-symbols-outlined">storefront</span>
+                                                企業方案
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- sp-advance-filter-Modal -->
+    <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">進階篩選</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <nav id="modal-sp-advance-filter-navbar" class="navbar bg-body-tertiary px-3 mb-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading1">職缺資訊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading2">薪資待遇</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading2">出勤管理</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#scrollspyHeading2">經歷身分</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button"
+                                    aria-expanded="false">
+                                    <img src="https://statics.518.com.tw/img/icon/ic18/ic_arrow_down_darkblue700.svg"
+                                        alt="" width="18" height="18"></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#scrollspyHeading3">職缺資訊</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading4">薪資待遇</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading5">出勤管理</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading3">經歷身分</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading4">公司相關</a></li>
+                                    <li><a class="dropdown-item" href="#scrollspyHeading5">排除條件</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+                        data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2"
+                        tabindex="0">
+                        <h4 id="scrollspyHeading1">First heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus dolorem quasi facere
+                            molestias! Non officia tenetur ipsam provident veritatis quidem, at dignissimos? Maiores ut
+                            repellat magnam veniam vel atque!</p>
+                        <h4 id="scrollspyHeading2">Second heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus dolorem quasi facere
+                            molestias! Non officia tenetur ipsam provident veritatis quidem, at dignissimos? Maiores ut
+                            repellat magnam veniam vel atque!</p>
+                        <h4 id="scrollspyHeading3">Third heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus dolorem quasi facere
+                            molestias! Non officia tenetur ipsam provident veritatis quidem, at dignissimos? Maiores ut
+                            repellat magnam veniam vel atque!</p>
+                        <h4 id="scrollspyHeading4">Fourth heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus dolorem quasi facere
+                            molestias! Non officia tenetur ipsam provident veritatis quidem, at dignissimos? Maiores ut
+                            repellat magnam veniam vel atque!</p>
+                        <h4 id="scrollspyHeading5">Fifth heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel possimus dolorem quasi facere
+                            molestias! Non officia tenetur ipsam provident veritatis quidem, at dignissimos? Maiores ut
+                            repellat magnam veniam vel atque!</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h1 class="modal-title fs-5" id="exampleModal1Label">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="position: relative;">
+
+
+
+
+
+                    <div class="row">
+                        <div class="col-4">
+                            <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                                class="scrollspy-example" tabindex="0">
+                                <h4 id="list-item-1">Item 1</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorem, vel
+                                    quibusdam nostrum
+                                    recusandae cum quam tenetur fugit sint minus ea molestias nisi perferendis nihil,
+                                    sed beatae
+                                    accusantium eaque asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Eveniet
+                                    dolorem, vel quibusdam nostrum recusandae cum quam tenetur fugit sint minus ea
+                                    molestias nisi
+                                    perferendis nihil, sed beatae accusantium eaque asperiores?</p>
+                                <h4 id="list-item-2">Item 2</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorem, vel
+                                    quibusdam nostrum
+                                    recusandae cum quam tenetur fugit sint minus ea molestias nisi perferendis nihil,
+                                    sed beatae
+                                    accusantium eaque asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Eveniet
+                                    dolorem, vel quibusdam nostrum recusandae cum quam tenetur fugit sint minus ea
+                                    molestias nisi
+                                    perferendis nihil, sed beatae accusantium eaque asperiores?</p>
+                                <h4 id="list-item-3">Item 3</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorem, vel
+                                    quibusdam nostrum
+                                    recusandae cum quam tenetur fugit sint minus ea molestias nisi perferendis nihil,
+                                    sed beatae
+                                    accusantium eaque asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Eveniet
+                                    dolorem, vel quibusdam nostrum recusandae cum quam tenetur fugit sint minus ea
+                                    molestias nisi
+                                    perferendis nihil, sed beatae accusantium eaque asperiores?</p>
+                                <h4 id="list-item-4">Item 4</h4>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet dolorem, vel
+                                    quibusdam nostrum
+                                    recusandae cum quam tenetur fugit sint minus ea molestias nisi perferendis nihil,
+                                    sed beatae
+                                    accusantium eaque asperiores?Lorem ipsum dolor sit, amet consectetur adipisicing
+                                    elit. Eveniet
+                                    dolorem, vel quibusdam nostrum recusandae cum quam tenetur fugit sint minus ea
+                                    molestias nisi
+                                    perferendis nihil, sed beatae accusantium eaque asperiores?</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <section class="top-section sticky-top">
+
+        <div class="top-section-wrap">
+
+            <div class="search-part">
+                <!-- for sp -->
+                <div class="for-sp">
+                    <div class="search-bar">
+                        <a class="btn to-index" href="#" role="button">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            首頁
+                        </a>
+                        <form class="search-input" action="">
+                            <input type="search" class="form-control" placeholder="試試搜尋職務、公司">
+                        </form>
+                        <a class="btn member-center" href="#" role="button">
+                            <img src="./images/ic_account.svg" alt="" class="login-for-sp1">
+                        </a>
+
+                    </div>
+                    <div class="search-filters-and-subscribe">
+                        <div class="search-filters">
+                            <div id="location-distance" data-bs-toggle="modal" data-bs-target="#location-distance-md">
+                                地區/距離<span>1</span>
+                            </div>
+                            <div id="job-category" data-bs-toggle="modal" data-bs-target="#job-category-md">
+                                職務類別<span>1</span>
+                            </div>
+                            <div class="advance-filters" id="modal-trigger" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal1">
+                                進階<span>1</span>
+                                <img src="./images/ic_filter_white700.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="subscribe">
+                            <a type="button" class="btn btn-subscribe" data-bs-toggle="modal"
+                                data-bs-target="#subscribeModal">
+                                訂閱
+                            </a>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+    </section>
+
+
+    <div class="search-header sticky-top">
+        <div class="search-group">
+            <!-- for pc -->
+            <form class="search-bar for-pc row g-0">
+                <div class="col-2">
+                    <div id="location-distance" data-bs-toggle="modal" data-bs-target="#location-distance-md">
+                        地區<span class="function-btn-separator">/</span>距離
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div id="job-category" data-bs-toggle="modal" data-bs-target="#job-category-md">
+                        職務類別
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="search-input">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <label for="input-search" class="visually-hidden">Search</label>
+                        <input type="text" class="form-control" id="input-search" placeholder="試試搜尋職務/公司">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-danger btn-search">搜尋</button>
+                </div>
+            </form>
+            <div class="search-filter-and-subsribe for-pc">
+                <div class="search-filters-bar">
+                    <div class="dropdown filter filter-update">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            更新日期
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-filter">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    不拘
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2">
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                    本日最新
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault3">
+                                <label class="form-check-label" for="flexRadioDefault3">
+                                    三日內
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault4">
+                                <label class="form-check-label" for="flexRadioDefault4">
+                                    一週內
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault5">
+                                <label class="form-check-label" for="flexRadioDefault5">
+                                    二週內
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault6">
+                                <label class="form-check-label" for="flexRadioDefault6">
+                                    一個月內
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="gap-line"></div>
+
+                    <div class="dropdown filter filter-employment">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            職務性質
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-filter">
+                            <h5>職務性質</h5> <!-- h5隨便給的 -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    不拘
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    全職
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    兼職
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                    打工
+                                </label>
+                            </div>
+
+                            <h5>隱藏產業</h5> <!-- h5隨便給的 -->
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    隱藏派遣
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="gap-line"></div>
+
+                    <div class="dropdown filter filter-salary">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            薪資待遇
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-filter  dropdown-menu-salary">
+                            <h5>自訂薪資</h5>
+
+                            <div class="input-group input-group-salary">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>月薪</option>
+                                    <option value="1">時薪</option>
+                                    <option value="2">日薪</option>
+                                    <option value="3">週薪</option>
+                                    <option value="4">年薪</option>
+                                    <option value="5">部分月薪</option>
+                                    <option value="6">論件計酬</option>
+                                </select>
+                            </div>
+
+                            <div class="input-salary-range">
+                                <input type="text" class="form-control" placeholder="如28000">
+                                <span class="mx-2">-</span>
+                                <input type="text" class="form-control" placeholder="選填">
+                            </div>
+
+                            <div class="form-check form-check-salary">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    包含面議
+                                </label>
+                            </div>
+
+
+                            <button class="btn btn-outline-danger btn-salary-send" type="button">送出</button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="gap-line"></div>
+
+                    <div class="dropdown filter filter-shifts">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            上班班別
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-filter">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    日班
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    晚班
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    大夜班
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    假日班
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="gap-line"></div>
+
+                    <div class="dropdown filter filter-experience">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            工作經驗
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-filter">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    無經驗可
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    1年以下
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    1-3年
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    3-5年
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    5-10年
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    10年以上
+                                </label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="gap-line"></div>
+
+                    <div class="dropdown filter filter-feature">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            職缺特色
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-filter">
+                            <h5>服務業最愛</h5>
+                            <div class="feature-items">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        交通津貼
+                                    </label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        伙食津貼
+                                    </label>
+                                </div>
+                            </div>
+
+                            <h5>其他特色</h5>
+                            <div class="feature-items">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        高年終獎金
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        年薪70萬以上
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        年終14個月以上
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        獎金分紅機制
+                                    </label>
+                                </div>
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="gap-line"></div>
+
+                    <!-- Button trigger modal -->
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                        aria-controls="offcanvasRight">進階
+                        <img src="./images/filter.svg" alt=""></button>
+
+
+                    <div class="filter-clear">
+                        <button type="button" class="btn">清除條件</button>
+                    </div>
+                </div>
+
+                <div class="subscribe">
+
+
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn-outline-primary btn-subscribe" data-bs-toggle="modal"
+                        data-bs-target="#subscribeModal">
+                        <i></i>訂閱
+                    </button>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container-find-jobs">
+        <div class="search-result">
+            <div class="search-result-header">
+                <h2>全部工作職缺</h2>
+                <div class="order-by">
+
+                    排序：
+                    <button type="button" class="btn">預設</button>
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="按經歷排序有到無">經歷
+                        <i></i>
+                    </button>
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="按學歷排序高到低">學歷
+                        <i></i>
+                    </button>
+                    <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip" data-bs-title="按刊登時間排序新到舊">刊登時間
+                        <i></i>
+                    </button>
+
+
+                </div>
+            </div>
+
+            <div class="jobs-group">
+
+                <div class="job-card job-recommend" job-id="yO0R0k" job-url="https://www.518.com.tw/job-yO0R0k.html">
+                    <div class="job-intro">
+                        <h3 class="job-title">(隔日匯185)晚班理貨員-近關渡大橋A2AAAAAAAAAAAAAAAAAAAAAAAAAAA</h3>
+                        <div class="company">
+                            <a href="https://www.518.com.tw/company-yvM8ME.html">力信股份有限公司<i></i>
+                            </a>
+                        </div>
+                        <div class="job-salary">時薪 185元</div>
+                        <div class="job-conditions">
+                            <div class="job-area">台北市-北投區</div>
+                            <div class="job-experience">經歷不拘</div>
+                            <div class="job-education">學歷國中</div>
+                        </div>
+                        <div class="job-description for-pc">
+                            <p>工作內容：四輪推車卸貨並將貨品依項目分類擺放、需搬運、疊放 。
+
+                                -工作時間：
+                                A)16:00-20:30
+                                B)17:00-20:30
+                                -休假制度：週休二日
+                                -工作薪資：時薪185元隔日21點前匯款，假日順延AAAAAAAAAAAAAAAAA</p>
+                        </div>
+                        <div class="job-tags">
+                            <div><span>關渡站走路7分鐘</span></div>
+                            <div><span>回復率100%</span></div>
+                            <div><span>防疫企業</span></div>
+                        </div>
+                    </div>
+
+                    <div class="job-favorite">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jobFavoriteModal">
+                            <i></i>
+                        </button>
+                    </div>
+
+                    <div class="job-apply col-auto for-pc">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">
+                            <i></i>蛤快投</button>
+                    </div>
+
+                </div>
+                <div class="job-card job-new" job-id="yO0R0k" job-url="https://www.518.com.tw/job-yO0R0k.html">
+                    <div class="job-intro">
+                        <h3 class="job-title">(隔日匯185)晚班理貨員-近關渡大橋A2AAAAAAAAAAAAAA</h3>
+                        <div class="company">
+                            <a href="https://www.518.com.tw/company-yvM8ME.html">力信股份有限公司<i></i>
+                            </a>
+                        </div>
+                        <div class="job-salary">時薪 185元</div>
+                        <div class="job-conditions">
+                            <div class="job-area">台北市-北投區</div>
+                            <div class="job-experience">經歷不拘</div>
+                            <div class="job-education">學歷國中</div>
+                        </div>
+                        <div class="job-description for-pc">
+                            <p>工作內容：四輪推車卸貨並將貨品依項目分類擺放、需搬運、疊放 。
+
+                                -工作時間：
+                                A)16:00-20:30
+                                B)17:00-20:30
+                                -休假制度：週休二日
+                                -工作薪資：時薪185元隔日21點前匯款，假日順延</p>
+                        </div>
+                        <div class="job-tags">
+                            <div><span>關渡站走路7分鐘</span></div>
+                            <!-- <div><span>回復率100%</span></div>
+                            <div><span>防疫企業</span></div> -->
+                        </div>
+                    </div>
+
+                    <div class="job-favorite">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jobFavoriteModal">
+                            <i></i>
+                        </button>
+                    </div>
+
+                    <div class="job-apply col-auto for-pc">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">
+                            <i></i>蛤快投</button>
+                    </div>
+
+                </div>
+                <div class="job-card job-hurry" job-id="yO0R0k" job-url="https://www.518.com.tw/job-yO0R0k.html">
+                    <div class="job-intro">
+                        <h3 class="job-title">(隔日匯185)晚班理貨員-近關渡大橋A2AAAAAAAAAAAAAA</h3>
+                        <div class="company">
+                            <a href="https://www.518.com.tw/company-yvM8ME.html">力信股份有限公司<i></i>
+                            </a>
+                        </div>
+                        <div class="job-salary">時薪 185元</div>
+                        <div class="job-conditions">
+                            <div class="job-area">台北市-北投區</div>
+                            <div class="job-experience">經歷不拘</div>
+                            <div class="job-education">學歷國中</div>
+                        </div>
+                        <div class="job-description for-pc">
+                            <p>工作內容：四輪推車卸貨並將貨品依項目分類擺放、需搬運、疊放 。
+
+                                -工作時間：
+                                A)16:00-20:30
+                                B)17:00-20:30
+                                -休假制度：週休二日
+                                -工作薪資：時薪185元隔日21點前匯款，假日順延</p>
+                        </div>
+                        <div class="job-tags">
+                            <!-- <div><span>關渡站走路7分鐘</span></div>
+                            <div><span>回復率100%</span></div>
+                            <div><span>防疫企業</span></div> -->
+                        </div>
+                    </div>
+
+                    <div class="job-favorite">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jobFavoriteModal">
+                            <i></i>
+                        </button>
+                    </div>
+
+                    <div class="job-apply col-auto for-pc">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">
+                            <i></i>蛤快投</button>
+                    </div>
+
+                </div>
+                <div class="job-card job-normal" job-id="yO0R0k" job-url="https://www.518.com.tw/job-yO0R0k.html">
+                    <div class="job-intro">
+                        <h3 class="job-title">(隔日匯185)晚班理貨員-近關渡大橋A2AAAAAAAAAAAAAA</h3>
+                        <div class="company">
+                            <a href="https://www.518.com.tw/company-yvM8ME.html">力信股份有限公司<i></i>
+                            </a>
+                        </div>
+                        <div class="job-salary">時薪 185元</div>
+                        <div class="job-conditions">
+                            <div class="job-area">台北市-北投區</div>
+                            <div class="job-experience">經歷不拘</div>
+                            <div class="job-education">學歷國中</div>
+                        </div>
+                        <div class="job-description for-pc">
+                            <p>工作內容：四輪推車卸貨並將貨品依項目分類擺放、需搬運、疊放 。
+
+                                -工作時間：
+                                A)16:00-20:30
+                                B)17:00-20:30
+                                -休假制度：週休二日
+                                -工作薪資：時薪185元隔日21點前匯款，假日順延</p>
+                        </div>
+                        <div class="job-tags">
+                            <div><span>關渡站走路7分鐘</span></div>
+                            <div><span>回復率100%</span></div>
+                            <!-- <div><span>防疫企業</span></div> -->
+                        </div>
+                    </div>
+
+                    <div class="job-favorite">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jobFavoriteModal">
+                            <i></i>
+                        </button>
+                    </div>
+
+                    <div class="job-apply col-auto for-pc">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">
+                            <i></i>蛤快投</button>
+                    </div>
+
+                </div>
+                <div class="job-card job-normal" job-id="yO0R0k" job-url="https://www.518.com.tw/job-yO0R0k.html">
+                    <div class="job-intro">
+                        <h3 class="job-title">(隔日匯185)晚班理貨員-近關渡大橋A2AAAAAAAAAAAAAA</h3>
+                        <div class="company">
+                            <a href="https://www.518.com.tw/company-yvM8ME.html">力信股份有限公司<i></i>
+                            </a>
+                        </div>
+                        <div class="job-salary">時薪 185元</div>
+                        <div class="job-conditions">
+                            <div class="job-area">台北市-北投區</div>
+                            <div class="job-experience">經歷不拘</div>
+                            <div class="job-education">學歷國中</div>
+                        </div>
+                        <div class="job-description for-pc">
+                            <p>工作內容：四輪推車卸貨並將貨品依項目分類擺放、需搬運、疊放 。
+
+                                -工作時間：
+                                A)16:00-20:30
+                                B)17:00-20:30
+                                -休假制度：週休二日
+                                -工作薪資：時薪185元隔日21點前匯款，假日順延</p>
+                        </div>
+                        <div class="job-tags">
+                            <!-- <div><span>關渡站走路7分鐘</span></div>
+                            <div><span>回復率100%</span></div>
+                            <div><span>防疫企業</span></div> -->
+                        </div>
+                    </div>
+
+                    <div class="job-favorite">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jobFavoriteModal">
+                            <i></i>
+                        </button>
+                    </div>
+
+                    <div class="job-apply col-auto for-pc">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">
+                            <i></i>蛤快投</button>
+                    </div>
+
+                </div>
+                <div class="job-card job-normal" job-id="yO0R0k" job-url="https://www.518.com.tw/job-yO0R0k.html">
+                    <div class="job-intro">
+                        <h3 class="job-title">(隔日匯185)晚班理貨員-近關渡大橋A2AAAAAAAAAAAAAA</h3>
+                        <div class="company">
+                            <a href="https://www.518.com.tw/company-yvM8ME.html">力信股份有限公司<i></i>
+                            </a>
+                        </div>
+                        <div class="job-salary">時薪 185元</div>
+                        <div class="job-conditions">
+                            <div class="job-area">台北市-北投區</div>
+                            <div class="job-experience">經歷不拘</div>
+                            <div class="job-education">學歷國中</div>
+                        </div>
+                        <div class="job-description for-pc">
+                            <p>工作內容：四輪推車卸貨並將貨品依項目分類擺放、需搬運、疊放 。
+
+                                -工作時間：
+                                A)16:00-20:30
+                                B)17:00-20:30
+                                -休假制度：週休二日
+                                -工作薪資：時薪185元隔日21點前匯款，假日順延</p>
+                        </div>
+                        <div class="job-tags">
+                            <div><span>關渡站走路7分鐘</span></div>
+                            <!-- <div><span>回復率100%</span></div>
+                            <div><span>防疫企業</span></div> -->
+                        </div>
+                    </div>
+
+                    <div class="job-favorite">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#jobFavoriteModal">
+                            <i></i>
+                        </button>
+                    </div>
+
+                    <div class="job-apply col-auto for-pc">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                            data-bs-target="#applyModal">
+                            <i></i>蛤快投</button>
+                    </div>
+
+                </div>
+                <div class="job-loading for-sp">
+                    <div class="spinner-border spinner-job-loading" role="status"></div>
+                    資料讀取中...
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+            <nav aria-label="Page navigation example" class="for-pc">
+                <ul class="pagination justify-content-end for-pc">
+                    <li class="page-item">
+                        <a class="page"><i class="fa-solid fa-angle-left"></i> 上一頁</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page" href="#">下一頁 <i class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                    <span>第1/50頁</span>
+                </ul>
+
+            </nav>
+        </div>
+
+        <div class="fast-filters-and-map for-pc">
+            <div class="fast-filters">
+                <div>
+                    <span>新鮮人看過來！</span>
+                    <!-- <a href="#" class="btn" role="button" data-bs-toggle="button">高薪四萬休假日</a> -->
+                    <a href="#" class="btn">💰 高薪四萬休假日
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn">🍚 伙食津貼吃飽飽
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn">👕 門市員購好優惠
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="btn">💼 無工作經驗免煩惱
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="search-map">
+                <p>想睡飽？
+                    <a href="">用地圖找離家近工作</a>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer class="for-pc">
+        <div class="container">
+            <div class="row footer-top-content  footer-content">
+                <div class=" footer-box logo-box col-6">
+
+                    <img class="qrcode-img" src="./img/ic_q_rcode.jpg" alt="qr-code">
+                    <div class="app-inbox">
+                        <h5 class="title">666蛤班<br>官方LINE</h5>
+
+                    </div>
+                </div>
+                <div class="href-wrap footer-box col-6">
+                    <div class="href-box">
+                        <h6 class="title">關於我們</h6>
+                        <a href="#">蛤班簡介</a>
+                        <a href="#">徵才方案</a>
+                        <a href="#">加入我們</a>
+                        <a href="#">網站地圖</a>
+                    </div>
+                    <div class="href-box">
+                        <h6 class="title">服務專區</h6>
+                        <a href="#" target="_blank">地區找工作</a>
+                        <a href="#" target="_blank">產業找工作</a>
+                        <a href="#" target="_blank">職務找工作</a>
+                        <a href="#" target="_blank">幫助中心</a>
+                    </div>
+                    <div class="href-box">
+                        <h6 class="title">會員條款</h6>
+                        <a href="#">刊登契約</a>
+                        <a href="#">免責聲明</a>
+                        <a href="#">服務條款</a>
+                        <a href="#">隱私權聲明</a>
+                    </div>
+                    <div class="href-box">
+                        <h6 class="title">合作專區</h6>
+                        <a href="#">廣告合作</a>
+                        <a href="#">申訴專線</a>
+                        <a href="#">網站公告</a>
+                        <a href="#">投資者專區 </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-content">
+                <div class="footer-bottom-top-wrap">
+                    <div class="row footer-content">
+                        <div class="footer-box col-lg-8   col-6">
+                            <a href="#"><img class="logo-img" src="./img/logo_666_b_white.png" alt="蛤班 logo"></a>
+                            <p class="slogan">下班店長請指示</p>
+                        </div>
+                        <div class="footer-box justify-content-end col-lg-4 col-6">
+                            <a href="#" target="_blank">
+                                <img class="media-img" src="./img/ic_ig.svg" alt="蛤班 IG">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img class="media-img" src="./img/ic_fb.svg" alt="蛤班 FB">
+                            </a>
+                            <a href="#" target="_blank">
+                                <img class="media-img" src="./img/ic_youtube.svg" alt="蛤班 Youtube">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-end-wrap">
+                    <div class="copyright">
+                        <p>© 2023 by HaBan Technology Co., Ltd. All Rights Reserved.</p>
+                    </div>
+                    <div class="text-content">
+                        <p class="is-pc me-4">
+                            客服專線：00-0000-0000
+                        </p>
+                        <p>機構地址 台北市大安區忠孝東路三段xx號xx號樓之x</p>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Modal-navmember-sp -->
+    <div class="header modal-member modal fade" id="navmember-sp-md" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="navbar-nav">
+                    <div class="candidate">
+                        <ul>
+                            <span class="member-type">求職會員</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">求職註冊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">求職登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="company">
+                        <ul>
+                            <span class="member-type">企業徵才</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">企業註冊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">企業登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal-location-distance -->
+    <div class="modal-location modal fade" id="location-distance-md" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="staticBackdropLabel">地區 / 距離</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body-top modal-body">
+                    <nav>
+                        <div class="btn-group" id="nav-tab" role="tablist">
+                            <button class="btn active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                                type="button" role="tab" aria-controls="nav-home" aria-selected="true">工作地區</button>
+                            <button class="btn btn-distance" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">
+                                <img src="https://statics.518.com.tw/img/label/img_feature_new_yellow.svg"
+                                    class="pop_location_label" alt="NEW標籤">
+                                通勤距離</button>
+                        </div>
+                    </nav>
+                </div>
+                <div class="modal-body location-list">
+                    <div class="tab-content" id="nav-tabContent">
+                        <!-- 工作地區 頁籤內容 -->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab" tabindex="0">
+                            <!-- 縣市 選單 -->
+                            <ul class="list-group-country list-group ">
+                                <li class="list-group-item">
+                                    <label class="form-check-label" for="firstRadio-country">
+                                        <div class="title">
+                                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                                value="" id="firstRadio-country" checked>
+                                            基隆市
+                                        </div>
+                                        <div class="right_wrap">
+                                            <span class="choose-num" style="display: none;">0</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label" for="secondRadio-country">
+                                        <div class="title">
+                                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                                value="" id="secondRadio-country">
+                                            新北市
+                                        </div>
+                                        <div class="right_wrap">
+                                            <span class="choose-num" style="display: none;">0</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label" for="thirdRadio-country">
+                                        <div class="title">
+                                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                                value="" id="thirdRadio-country">
+                                            台北市
+                                        </div>
+                                        <div class="right_wrap">
+                                            <span class="choose-num" style="display: none;">0</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label" for="fourthRadio-country">
+                                        <div class="title">
+                                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                                value="" id="fourthRadio-country">
+                                            桃園市
+                                        </div>
+                                        <div class="right_wrap">
+                                            <span class="choose-num" style="display: none;">0</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label" for="fifthRadio-country">
+                                        <div class="title">
+                                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                                value="" id="fifthRadio-country">
+                                            新竹縣
+                                        </div>
+                                        <div class="right_wrap">
+                                            <span class="choose-num" style="display: none;">0</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label" for="sixthRadio-country">
+                                        <div class="title">
+                                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                                value="" id="sixthRadio-country">
+                                            新竹市
+                                        </div>
+                                        <div class="right_wrap">
+                                            <span class="choose-num" style="display: none;">0</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label" for="seventhRadio-country">
+                                        <div class="title">
+                                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                                value="" id="seventhRadio-country">
+                                            苗栗縣
+                                        </div>
+                                        <div class="right_wrap">
+                                            <span class="choose-num" style="display: none;">0</span>
+                                            <span class="material-symbols-outlined">chevron_right</span>
+                                        </div>
+                                    </label>
+                                </li>
+                            </ul>
+                            <!-- 區 選單 -->
+
+                            <!-- <ul class="list-group-district list-group"> -->
+                            <!-- 返回按鈕 -->
+                            <!--<li class="item-county list-group-item">
+                            <label class="form-check-label" for="firstRadio">
+                                <div class="right_wrap">
+                                    <span class="material-symbols-outlined">chevron_left</span>
+                                </div>
+                                <div class="title">
+                                    <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                        value="" id="firstRadio" checked>
+                                    基隆市
+                                </div>
+                            </label>
+                        </li>-->
+                            <!-- 全選這縣市 -->
+                            <!--<li class="select-all-district list-group-item">
+                            <label class="all-checkbox form-check-label" for="AllDistrictCheckbox">
+                                <input class="form-check-input me-1" type="checkbox" value=""
+                                    id="AllDistrictCheckbox">
+                                基隆市
+                            </label>
+                            <label class="more-checkbox form-check-label" for="MoreDistrictCheckbox">
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </label>
+
+                        </li>
+                        <input class="form-check-input me-1" type="checkbox" value="" id="MoreDistrictCheckbox">-->
+                            <!-- 區 選單 -->
+                            <!--<ul class="district-checkbox-group list-group">
+                            <li class="list-group-item">
+                                <label class="form-check-label stretched-link" for="firstCheckbox-district">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="firstCheckbox-district">
+                                    七堵區
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                <label class="form-check-label stretched-link" for="secondCheckbox-district">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="secondCheckbox-district">
+                                    中正區
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                <label class="form-check-label stretched-link" for="thirdCheckbox-district">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="thirdCheckbox-district">
+                                    仁愛區
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                <label class="form-check-label stretched-link" for="fourthCheckbox-district">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="fourthCheckbox-district">
+                                    信義區
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                <label class="form-check-label stretched-link" for="fifthCheckbox-district">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="fifthCheckbox-district">
+                                    安樂區
+                                </label>
+                            </li>
+                            <li class="list-group-item">
+                                <label class="form-check-label stretched-link" for="sixthCheckbox-district">
+                                    <input class="form-check-input me-1" type="checkbox" value=""
+                                        id="sixthCheckbox-district">
+                                    中山區
+                                </label>
+                            </li>
+                        </ul>
+
+                    </ul> -->
+                        </div>
+                        <!-- 通勤距離 頁籤內容 -->
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                            tabindex="0">
+                            <div class="distance-selector" title="地區/距離" maxitem="10" unsaveditems="3001019"
+                                isallowedselectmedium="true" keyword="" getcitymergekeys="function () { [native code] }"
+                                showsectionviews="false" onlyshowtaiwancities="false">
+                                <div class="distance-selector-box">
+                                    <div class="title">
+                                        <span>你的位置<i class="required-icon">*</i></span>
+                                        <a class="history-btn" href="javascript:;">
+                                            <span class="material-symbols-outlined">history</span>
+                                            歷史紀錄
+                                        </a>
+                                    </div>
+                                    <a class="distance-selector-geolocation-btn" href="javascript:;">使用目前位置</a>
+                                    <a class="distance-selector-section-btn" href="javascript:;">請選擇縣市區</a>
+                                    <p class="error-txt"></p>
+                                    <input class="distance-selector-address-input" type="text" placeholder="輸入詳細地址">
+                                    <p class="error-txt"></p>
+                                </div>
+                                <div class="distance-selector-box">
+                                    <div class="title">
+                                        <span>通勤方式<i class="required-icon">*</i></span>
+                                    </div>
+                                    <div class="distance-selector-commuting-by-selects">
+                                        <label class="distance-selector-commuting-by-select">
+                                            <input type="radio" name="by" value="walk">
+                                            <span class="material-symbols-outlined">directions_walk</span>
+                                            <span>走路</span>
+                                        </label>
+                                        <label class="distance-selector-commuting-by-select">
+                                            <input type="radio" name="by" value="bicycle">
+                                            <span class="material-symbols-outlined">directions_bike</span>
+                                            <span>腳踏車</span>
+                                        </label>
+                                        <label class="distance-selector-commuting-by-select">
+                                            <input type="radio" name="by" value="scooter">
+                                            <span class="material-symbols-outlined">two_wheeler</span>
+                                            <span>機車</span>
+                                        </label>
+                                        <label class="distance-selector-commuting-by-select">
+                                            <input type="radio" name="by" value="metro">
+                                            <span class="material-symbols-outlined">directions_subway</span>
+                                            <span>捷運</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="distance-selector-box">
+                                    <div class="title"><span>通勤時間<i class="required-icon">*</i></span>
+                                    </div>
+                                    <div class="distance-selector-commuting-time-selects"><label
+                                            class="distance-selector-commuting-time-select"><input type="radio"
+                                                name="time" value="10"><span>10分鐘內</span></label><label
+                                            class="distance-selector-commuting-time-select"><input type="radio"
+                                                name="time" value="20"><span>20分鐘內</span></label><label
+                                            class="distance-selector-commuting-time-select"><input type="radio"
+                                                name="time" value="30"><span>30分鐘內</span></label><label
+                                            class="distance-selector-commuting-time-select"><input type="radio"
+                                                name="time" value="40"><span>40分鐘內</span></label><label
+                                            class="distance-selector-commuting-time-select"><input type="radio"
+                                                name="time" value="50"><span>50分鐘內</span></label><label
+                                            class="distance-selector-commuting-time-select"><input type="radio"
+                                                name="time" value="60"><span>60分鐘內</span></label></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row w-100">
+                        <button type="button" class="btn btn-clear">清除</button>
+                        <button type="button" class="btn btn-submit">確認送出(0/10)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal-job-category -->
+    <div class="modal-category modal fade" id="job-category-md" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">職務類別</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- 職業分類 選單 -->
+                    <!-- <ul class="list-group-category list-group ">
+                <li class="list-group-item">
+                    <label class="form-check-label" for="firstRadio-category">
+                        <div class="title">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio"
+                                value="" id="firstRadio-category" checked>
+                            餐飲服務相關
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="secondRadio-category">
+                        <div class="title">
+                            <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="secondRadio-category">
+                            門市店面、零售百貨
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="thirdRadio-category">
+                        <div class="title">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="thirdRadio-category">
+                            旅遊飯店、休閒娛樂
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="fourthRadio-category">
+                        <div class="title">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="fourthRadio-category">
+                            美容美髮、美體相關
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="fifthRadio-category">
+                        <div class="title">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="fifthRadio-category">
+                            人資人事、經營管理
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="sixthRadio-category">
+                        <div class="title">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="sixthRadio-category">
+                            業務銷售、客戶服務
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="seventhRadio-category">
+                        <div class="title">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="seventhRadio-category">
+                            物流快遞、採購倉管
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="eighthRadio-category">
+                        <div class="title">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="eighthRadio-category">
+                            運輸相關、貿易稅務
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+                <li class="list-group-item">
+                    <label class="form-check-label" for="ninthRadio-category">
+                        <div class="title">
+                        <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                            id="ninthRadio-category">
+                            軍警消防、保全相關
+                        </div>
+                        <div class="right_wrap">
+                            <span class="choose-num" style="display: none;">0</span>
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </div>
+                    </label>
+                </li>
+            </ul>  -->
+                    <!-- 職業細項 選單 -->
+                    <ul class="list-group-job list-group">
+                        <!-- 返回分類按鈕 -->
+                        <li class="item-category list-group-item">
+                            <label class="form-check-label" for="firstRadio">
+                                <div class="right_wrap">
+                                    <span class="material-symbols-outlined">chevron_left</span>
+                                </div>
+                                <div class="title">
+                                    <input class="form-check-input me-1" type="radio" name="listGroupRadio" value=""
+                                        id="firstRadio" checked>
+                                    餐飲服務相關
+                                </div>
+                            </label>
+                        </li>
+                        <!-- 全選這職位 -->
+                        <li class="group-all-job list-group-item">
+                            <label class="all-checkbox form-check-label" for="AllJobCheckbox-gp1">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="AllJobCheckbox-gp1">
+                                廚師/助理
+                            </label>
+                            <label class="more-checkbox form-check-label" for="MoreJobCheckbox-gp1">
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </label>
+
+                            <input class="form-check-input me-1" type="checkbox" value="" id="MoreJobCheckbox-gp1">
+
+                            <!-- 細項 選單 -->
+                            <ul class="job-checkbox-group list-group">
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="firstCheckbox-gp1-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox-gp1-job">
+                                        中式廚師
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="secondCheckbox-gp1-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="secondCheckbox-gp1-job">
+                                        西式廚師
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="thirdCheckbox-gp1-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="thirdCheckbox-gp1-job">
+                                        日式廚師
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="fourthCheckbox-gp1-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="fourthCheckbox-gp1-job">
+                                        西點/蛋糕師
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="fifthCheckbox-gp1-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="fifthCheckbox-gp1-job">
+                                        麵包師
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="sixthCheckbox-gp1-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="sixthCheckbox-gp1-job">
+                                        餐廚助手
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="seventhCheckbox-gp1-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="seventhCheckbox-gp1-job">
+                                        其他料理廚師
+                                    </label>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                        <!-- 全選這職位 -->
+                        <li class="group-all-job list-group-item">
+                            <label class="all-checkbox form-check-label" for="AllJobCheckbox-gp2">
+                                <input class="form-check-input me-1" type="checkbox" value="" id="AllJobCheckbox-gp2">
+                                內外場服務
+                            </label>
+                            <label class="more-checkbox form-check-label" for="MoreJobCheckbox-gp2">
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </label>
+
+                            <input class="form-check-input me-1" type="checkbox" value="" id="MoreJobCheckbox-gp2">
+
+                            <!-- 細項 選單 -->
+                            <ul class="job-checkbox-group list-group">
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="firstCheckbox-gp2-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="firstCheckbox-gp2-job">
+                                        餐飲服務人員
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="secondCheckbox-gp2-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="secondCheckbox-gp2-job">
+                                        飲品調製販售員
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="thirdCheckbox-gp2-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="thirdCheckbox-gp2-job">
+                                        調酒師／吧檯人員
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="fourthCheckbox-gp2-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="fourthCheckbox-gp2-job">
+                                        洗碗人員
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="fifthCheckbox-gp2-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="fifthCheckbox-gp2-job">
+                                        餐飲主管
+                                    </label>
+                                </li>
+                                <li class="list-group-item">
+                                    <label class="form-check-label stretched-link" for="sixthCheckbox-gp2-job">
+                                        <input class="form-check-input me-1" type="checkbox" value=""
+                                            id="sixthCheckbox-gp2-job">
+                                        餐飲主管
+                                    </label>
+                                </li>
+                            </ul>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <div class="row w-100">
+                        <button type="button" class="btn btn-clear">清除</button>
+                        <button type="button" class="btn btn-submit">確認送出(0/10)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- member-Modal -->
+    <div class="modal-member modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="navbar-nav">
+                    <div class="candidate">
+                        <ul>
+                            <span class="member-type">求職會員</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">求職註冊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">求職登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="company">
+                        <ul>
+                            <span class="member-type">企業徵才</span>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">企業註冊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">企業登入</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 進階的右側Modal + Scrollspy Modal -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <!-- <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div> -->
+        <div class="offcanvas-body">
+            <div class="row">
+                <div class="col-4">
+                    <div id="list-example" class="list-group">
+                        <a class="list-group-item list-group-item-action" href="#list-item-1">薪資待遇</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-2">出勤管理</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-3">經歷身分</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-4">公司相關</a>
+                        <a class="list-group-item list-group-item-action" href="#list-item-5">排除條件</a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true"
+                        class="scrollspy-example" tabindex="0">
+                        <h4 id="list-item-1">薪資待遇</h4>
+                        <h5>支薪方式</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck1">領現</label>
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck2">匯款</label>
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck3">LINE
+                            Pay</label>
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck4">街口支付</label>
+                        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck5">支票</label>
+
+                        <h4 id="list-item-2">出勤管理</h4>
+                        <h5>休假制度</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck6">週休二日</label>
+                        <input type="checkbox" class="btn-check" id="btncheck7" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck7">隔週休</label>
+                        <input type="checkbox" class="btn-check" id="btncheck8" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck8">依公司規定</label>
+
+                        <h5>空班制度(單選)</h5>
+                        <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="option1">有空班</label>
+                        <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="option2">無空班</label>
+
+                        <h5>排班制度</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck9" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck9">排班制</label>
+                        <input type="checkbox" class="btn-check" id="btncheck10" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck10">輪班制</label>
+
+                        <h5>管理責任</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck11">無</label>
+                        <input type="checkbox" class="btn-check" id="btncheck12" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck12">4人以下</label>
+                        <input type="checkbox" class="btn-check" id="btncheck13" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck13">5-8人</label>
+                        <input type="checkbox" class="btn-check" id="btncheck14" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck14">9-12人</label>
+                        <input type="checkbox" class="btn-check" id="btncheck15" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck15">13人以上
+                        </label>
+                        <input type="checkbox" class="btn-check" id="btncheck16" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck16">人數未定</label>
+
+                        <h5>員工制服</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck17" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck17">有制服</label>
+
+                        <h4 id="list-item-3">經歷身分</h4>
+                        <h5>學歷限制</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck18" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck18">國中以下</label>
+                        <input type="checkbox" class="btn-check" id="btncheck19" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck19">高中職</label>
+                        <input type="checkbox" class="btn-check" id="btncheck20" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck20">專科</label>
+                        <input type="checkbox" class="btn-check" id="btncheck21" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck21">大學</label>
+                        <input type="checkbox" class="btn-check" id="btncheck22" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck22">研究所以上</label>
+
+                        <h5>求職身分</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck23" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck23">二度就業</label>
+                        <input type="checkbox" class="btn-check" id="btncheck24" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck24">中高齡(45-65歲)</label>
+                        <input type="checkbox" class="btn-check" id="btncheck25" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck25">身心障礙者</label>
+                        <input type="checkbox" class="btn-check" id="btncheck26" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck26">研發替代役</label>
+
+                        <h4 id="list-item-4">公司相關</h4>
+                        <h5>近捷運站</h5>
+                        <h5>產業類別</h5>
+
+                        <h5>公司福利</h5>
+                        <input type="checkbox" class="btn-check" id="btncheck27" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck27">員工旅遊</label>
+                        <input type="checkbox" class="btn-check" id="btncheck28" autocomplete="off">
+                        <label class="btn btn-outline-primary col-4 mb-3" for="btncheck28">上市櫃公司</label>
+                        <h4 id="list-item-5">排除條件</h4>
+                        <h5>排除公司關鍵字</h5>
+                        <input type="text" class="form-control" placeholder="以,區隔，例如：保險,派遣" aria-label="exclude-company"
+                            aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary">清除</button>
+            <button type="button" class="btn btn-primary">確認送出</button>
+        </div>
+    </div>
+
+
+
+    <!-- 訂閱的正中間Modal -->
+    <div class="modal" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <img src="./images/subscribe_default.svg" alt="">
+
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="subscribeModalLabel">新職缺上架時通知我</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>不錯過好工作<br>立即訂閱可收到信件提醒~</p>
+                    <input type="email" class="form-control" placeholder="Email">
+                    <button type="button" class="btn btn-primary">立即免費訂閱</button>
+                </div>
+                <div class="modal-footer">
+                    <p>送出即接受並同意遵守此
+                        <a href="https://www.518.com.tw/help-helpser.html?p=pris" target="_blank">隱私政策</a>
+                        中個人資料所有條款。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 收藏的Modal -->
+    <div class="modal fade" id="jobFavoriteModal" tabindex="-1" aria-labelledby="jobFavoriteModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="jobFavoriteModalLabel">收藏職缺</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h5>存放資料夾</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            新增
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            選擇
+                        </label>
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>資料夾1</option>
+                        <option value="1">資料夾2</option>
+                        <option value="2">資料夾3</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">確認</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 蛤快投的Modal -->
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="applyModalLabel">蛤快投</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h2>應徵工作</h2>
+                    <p>(隔日匯185)晚班理貨員-近關渡大橋A2<br>
+                        力信股份有限公司</p>
+                    <div class="resume-selection">
+                        <h2>履歷選擇</h2>
+                        <a href="">預覽履歷</a>
+                    </div>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>求職履歷</option>
+                        <!-- 有不同的履歷嗎? -->
+                        <option value="1">求職履歷2</option>
+                    </select>
+                    <div class="self-introduction">
+                        <h2>自我推薦</h2>
+                        <a href="">設定範本</a>
+                    </div>
+                    <select class="form-select mb-2" aria-label="Default select example">
+                        <option value="1">自行填寫</option>
+                        <option selected>【範本】自我推薦</option>
+
+                    </select>
+                    <textarea class="form-control" aria-label="With textarea" maxlength="200"></textarea>
+                    <span>xx/200</span>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            儲存範本
+                        </label>
+                        <input type="text" class="form-control" placeholder="輸入範本名稱"
+                            aria-label="Text input with checkbox">
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger">送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script>
+
+        // const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        //     target: '#modal-sp-advance-filter-navbar'
+        // })
+
+        // const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        //     target: '#navbar-example'
+        // })
+
+        const MyModal = document.getElementById("exampleModal1")
+        MyModal.addEventListener('shown.bs.modal', () => {
+            const scrollElem = MyModal.querySelector(`[data-bs-spy="scroll"]`)
+            bootstrap.ScrollSpy.getOrCreateInstance(scrollElem).refresh()
+        })
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>

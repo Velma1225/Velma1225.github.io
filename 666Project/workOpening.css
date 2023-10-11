@@ -1,0 +1,59 @@
+.requirement img{
+    width: 3%;
+    padding-right: 10px;
+}
+
+.mark-text-red{
+    color:#fa1e50;
+}
+.mark-text-blue{
+  color: #0d6efd;
+}
+.btn-save{
+  background-color: #FA1E50;
+  color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .table-rwd tbody tr {
+    display:block;
+    border: 1px solid #ddd;
+    margin:10px 0;
+  }
+  .table-rwd tbody tr td {
+    display:block;
+text-align: center;
+width: 100%;
+}
+
+.opening-list input{
+  width: 100%;
+}
+.opening-card{
+padding: 10px 0;
+border-bottom: 1px solid #E9EAEB;
+}
+
+}
+@media screen and (min-width:996px) {
+  .opening-card{
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #E9EAEB;
+  }
+}
+
+  
+ 
+ 
+   
+    
+    
+  
+
+
+
+
+

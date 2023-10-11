@@ -1,0 +1,18 @@
+.btn-sidebar {
+    position: fixed;
+    z-index: 2;
+    top: 65px;
+    left: 5px;
+    opacity: .5;
+    border: transparent;
+    background: gray;
+}
+
+.btn-sidebar:hover {
+    background-color: gray;
+}
+@media (min-width: 768px) {
+    .btn-sidebar {
+      display: none;
+    }
+  }
